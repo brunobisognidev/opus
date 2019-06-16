@@ -7,8 +7,8 @@ class App {
 
     constructor (){
 
-        this.express = this.express()
-        this.inDev = process.env.NODE_ENV  = 'production'
+        this.express = express()
+       
 
 
         this.database()
@@ -17,9 +17,7 @@ class App {
     }
 
     database (){
-        mongoose.connect('mongodb+srv://bruno:Amor131313@cluster0-l3vqt.mongodb.net/test?retryWrites=true&w=majority', {
-                useNewUrlParser : true,
-        });
+        mongoose.connect('mongodb://localhost:27017/opusapi',{useNewUrlParser : true,});
 
         
     }

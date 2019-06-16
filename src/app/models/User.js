@@ -8,17 +8,17 @@ const UserSchema = new mongoose.Schema({
     },
 
     cid : {
-        type : number,
+        type : Number,
         required : false
     },
     
     cpf : {
-        type : number,
+        type : Number,
         required : true
     },
 
     interesse :{
-        type : string,
+        type : String,
         require : true
     },
 
@@ -45,7 +45,7 @@ const UserSchema = new mongoose.Schema({
     },
 
     localização : {
-        type : string,
+        type : String,
         required : false 
     }, 
 
@@ -55,7 +55,7 @@ const UserSchema = new mongoose.Schema({
     },
 
         foto_user : {
-            type : Image,
+            type : String,
             required: false
         },
 

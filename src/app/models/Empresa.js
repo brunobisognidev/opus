@@ -8,7 +8,7 @@ const EmpresaSchema = new mongoose.Schema({
     },
 
     cnpj : {
-        type : number,
+        type : Number,
         required : false
     },
 

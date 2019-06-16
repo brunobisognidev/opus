@@ -9,7 +9,7 @@ const VagaSchema = new mongoose.Schema({
     },
 
     descricao_vaga : {
-        type : text,
+        type : Text,
         required : true
     },
 
